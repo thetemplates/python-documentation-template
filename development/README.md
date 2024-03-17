@@ -49,7 +49,7 @@ runs `environment.yml`, which uses the same *requirements.txt* as Dockerfile.
 Initialise Sphinx
 
 ```shell
-mkdir docs && cd docs && sphinx-quickstart && cd ..
+mkdir docs && cd docs && sphinx-quickstart
 ```
 
 Build
