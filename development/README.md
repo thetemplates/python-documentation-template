@@ -4,7 +4,8 @@ The repository's development notes.
 
 <br>
 
-## Remote & Local Development
+## Environments
+
 
 ### Remote Development
 
