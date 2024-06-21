@@ -4,6 +4,8 @@ sphinx-rtd-theme
 sphinx-design
 furo
 myst-parser
+sphinx-issues
+sphinx-copybutton
 sphinx-tippy
 sphinx-togglebutton
 sphinxcontrib-mermaid
