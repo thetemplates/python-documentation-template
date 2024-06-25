@@ -15,28 +15,24 @@ Random pages.
 
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Introduction
+   :maxdepth: 2
    :hidden:
 
    introduction
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Computer Vision
+   :maxdepth: 2
    :glob:
    :hidden:
 
-   cv/*
+   cv/cv
 
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Natural Language Processing
+   :maxdepth: 2
    :hidden:
 
-   Redacting Text <nlp/redaction>
-   nlp/summarisation
+   nlp/nlp
 
 
 .. raw:: html

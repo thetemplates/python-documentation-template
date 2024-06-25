@@ -1,11 +1,11 @@
 <br>
 
-# Text Redaction
+# Named Entity Recognition
 
 <br>
 
 :::{note}
-:class: margin
+:class: dropdown
 In Progress
 :::
 

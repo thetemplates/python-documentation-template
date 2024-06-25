@@ -2,12 +2,7 @@
 
 # Introduction
 
-<br>
-
-:::{note}
-:class: margin
-In Progress
-:::
+{octicon}`comment;1em;sd-text-info` <span style="color: #276be9">In Progress</span>
 
 <br>
 <br>

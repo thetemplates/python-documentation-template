@@ -5,7 +5,7 @@
 <br>
 
 :::{note}
-:class: margin
+:class: dropdown
 In Progress
 :::
 
