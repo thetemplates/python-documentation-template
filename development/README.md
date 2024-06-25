@@ -68,7 +68,6 @@ Logo
 
 ### References
 
-
 **SPHINX**
 
 * [Sphinx](https://www.sphinx-doc.org/en/master/index.html)
@@ -117,12 +116,12 @@ Logo
 * [`em` & `px`](https://nekocalc.com/em-to-px-converter)
 
 
-
 <br>
+
 
 **HTML (HyperText Markup Language)**
 
-  * Tabs: [1](https://www.html-easy.com/learn/how-to-add-tabs-in-html/), [2](https://www.w3schools.com/howto/howto_js_tabs.asp), [3](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/)
+* Tabs: [1](https://www.html-easy.com/learn/how-to-add-tabs-in-html/), [2](https://www.w3schools.com/howto/howto_js_tabs.asp), [3](https://squidfunk.github.io/mkdocs-material/reference/content-tabs/)
 
 <br>
 <br>
