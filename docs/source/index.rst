@@ -16,7 +16,6 @@ Random pages.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Introduction
    :hidden:
 
    introduction
