@@ -43,8 +43,6 @@ runs `environment.yml`, which uses the same *requirements.txt* as Dockerfile.
 
 ## Sphinx
 
-### Usage Notes
-
 Initialise Sphinx via
 
 ```shell
