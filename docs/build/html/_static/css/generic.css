@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/* Preliminaries */
+body {
+    font-family: Vollkorn, sans-serif;
+    font-size: medium;
+    color: black;
+    font-weight: 500;
+}
+
+.caption-text {
+    font-family: Vollkorn, sans-serif;
+    font-variant: all-petite-caps;
+    font-size: large;
+}
+
+.bd-sidebar-primary {
+    font-variant: small-caps;
+}
+
+.admonition-title {
+    --pst-color-attention-bg: white;
+}
+
+
+/* Impacts: The bottom border of a table's header row, and hyperlinks*/
+html[data-theme="light"] {
+    --pst-color-primary: black;
+}
+
+
+/* List */
+li {
+    margin-top:1px;
+    margin-bottom:1px;
+    padding-top: 1px;
+    padding-bottom:1px;
+    padding-left: 5px;
+}
+
+ul {
+    font-size: medium;
+}
+
+ul.special {
+    margin-top:0;
+    margin-bottom:1px;
+    padding-top: 0;
+    padding-bottom:1px;
+    margin-left: 15px;
+}
+
+
+/* Body */
+.bd-main .bd-content .wy-nav-content {
+    max-width: 1250px;
+}
+
+.bd-article-container {
+    max-width: 950px;
+}
+
+.prev-next-area a .prev-next-info .prev-next-subtitle {
+    margin-bottom: 15px;
+}
+
+.prev-next-footer {
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.prev-next-subtitle {
+    font-variant: small-caps;
+}
+
+.prev-next-title {
+    font-variant: small-caps;
+}
+
+
+/* Font */
+h1 {
+    display: block;
+    font-size: 1.63em;
+    font-variant: small-caps;
+    margin: 0.83em 0;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.27em;
+    text-transform: uppercase;
+    opacity: 0.90;
+    margin: 1em 0;
+    font-weight: 900;
+}
+
+h3 {
+    display: block;
+    font-size: 1em;
+    margin: 1.33em 0;
+    font-weight: bold;
+}
+
+h4 {
+    display: block;
+    font-size: .83em;
+    margin: 1.67em 0;
+    font-weight: bold;
+}
+
+h5 {
+    display: block;
+    font-size: .67em;
+    margin: 2.33em 0;
+    font-weight: bold;
+}
+
+
+/* Image */
+img {
+  margin-left: 65px
+}
+
+
+/* Table */
+table {
+    border-collapse: collapse;
+    border-spacing: 15px;
+    border: 0 black;
+    margin-left: 35px;
+    --pst-color-table-row-hover-bg: rgba(0, 0, 0, 0.15);
+}
+
+thead {
+    border-top: 0 solid black;
+    border-bottom: 0 solid black;
+}
+
+th {
+    padding: 9px;
+}
+
+td {
+    vertical-align: top;
+    padding: 9px;
+    margin-left: 9px;
+}
+
+
+/* Blockquote */
+blockquote {
+    border-left: 0;
+    border-radius: 0;
+    margin-left: 35px;
+}
