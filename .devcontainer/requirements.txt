@@ -11,6 +11,7 @@ sphinx-tippy
 sphinx-togglebutton
 sphinxcontrib-mermaid
 sphinxcontrib-constdata
+sphinxcontrib-bibtex
 pytest>=7.4.1
 coverage>=7.3.1
 pytest-cov>=4.1.0
