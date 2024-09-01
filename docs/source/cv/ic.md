@@ -1,4 +1,3 @@
-<br>
 
 # Image Classification
 
