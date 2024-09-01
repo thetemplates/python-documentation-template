@@ -1,8 +1,6 @@
 
 # Object Detection
 
-<br>
-
 :::{note}
 :class: dropdown
 In Progress
