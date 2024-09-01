@@ -1,14 +1,17 @@
-<br>
 
 # Computer Vision
 
-{octicon}`comment;1em;sd-text-info` <span style="color: #276be9">In Progress</span>
-
 <br>
+
+:::{note}
+In Progress
+:::
+
 <br>
 
 ```{toctree}
-:caption: TABLE OF CONTENTS
+:caption: Content
+:maxdepth: 1
 :glob:
 
 *
