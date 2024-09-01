@@ -1,8 +1,6 @@
 
 # Object Segmentation
 
-<br>
-
 :::{note}
 :class: dropdown
 In Progress
