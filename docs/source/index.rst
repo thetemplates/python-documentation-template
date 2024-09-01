@@ -29,37 +29,40 @@ An Illustrative Sphinx Template
 
 
 .. toctree::
-   :maxdepth: 2
-   :hidden:
+    :maxdepth: 2
+    :caption: Introduction
+    :hidden:
 
-   introduction
-
-.. toctree::
-   :maxdepth: 2
-   :glob:
-   :hidden:
-
-   cv/cv
-
+    introduction
 
 .. toctree::
-   :maxdepth: 2
-   :hidden:
+    :maxdepth: 2
+    :caption: CV
+    :glob:
+    :hidden:
 
-   nlp/nlp
+    cv/cv
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: NLP
+    :hidden:
+
+    nlp/nlp
 
 
 .. raw:: html
 
-  <br>
-  <br>
-  <br>
-  <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-  <br>
-  <br>
-  <br>
-  <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 ..
    Comment
