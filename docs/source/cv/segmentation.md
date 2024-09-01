@@ -1,4 +1,3 @@
-<br>
 
 # Object Segmentation
 
