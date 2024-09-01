@@ -1,8 +1,6 @@
 
 # Named Entity Recognition
 
-<br>
-
 :::{note}
 In Progress
 :::
