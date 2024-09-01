@@ -1,8 +1,6 @@
 
 # Summarising Text
 
-<br>
-
 :::{note}
 In Progress
 :::
