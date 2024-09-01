@@ -1,11 +1,9 @@
-<br>
 
 # Named Entity Recognition
 
 <br>
 
 :::{note}
-:class: dropdown
 In Progress
 :::
 
