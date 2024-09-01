@@ -1,8 +1,6 @@
 
 # Image Classification
 
-<br>
-
 :::{note}
 :class: dropdown
 In Progress
