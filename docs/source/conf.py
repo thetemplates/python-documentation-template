@@ -1,6 +1,9 @@
 """
 This is conf.py
 
+Notes
+-----
+
 Configuration file for the Sphinx documentation builder.
 
 For the full list of built-in configuration values, see the documentation:
@@ -8,18 +11,37 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html.
 
 Project information
 https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+
 """
-import sphinx_rtd_theme
-import sphinx_design
+
+# Libraries
+import os
+import sys
+import datetime
+
+# noinspection PyUnresolvedReferences
+import revitron_sphinx_theme
+
+
+'''
+Path
+'''
+sys.path.insert(0, os.path.abspath('../..'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../revitron'))
+
+
+'''
+Master
+'''
+master_doc = 'index'
 
 
 '''
 Basic
 '''
-project = 'An Illustrative Sphinx Template'
-copyright = '2024, Artificial Intelligence Unit'
-author = 'Artificial Intelligence Unit'
-release = '0.1'
+project = '&nbsp; <span style="vertical-align: super; padding-top: 0; padding-bottom: 0;">An Illustrative Sphinx Template</span>'
+project_copyright = '{}, The Artificial Intelligence Unit'.format(datetime.datetime.now().year)
+author = '@greyhypotheses'
 
 
 '''
@@ -28,15 +50,22 @@ https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configurat
 https://myst-parser.readthedocs.io/en/v0.15.1/sphinx/intro.html#install-a-new-sphinx-extension-and-use-its-functionality
 '''
 extensions = [
-    'sphinx.ext.duration',
-    'sphinx.ext.githubpages',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
-    'sphinx_design',
-    'sphinxcontrib.mermaid',
-    "sphinx.ext.intersphinx",
-    "sphinx.ext.viewcode",
+    'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages',
+    'revitron_sphinx_theme',
+    'autodocsumm',
+    'sphinxcontrib.httpdomain',
+    'sphinx.ext.napoleon',
+    'sphinxext.opengraph',
+    'sphinxcontrib.jquery',
     'myst_parser',
-    'sphinx_issues'
+    'sphinx.ext.duration',
+    'sphinx_design',
+    'sphinxcontrib.mermaid'
 ]
 
 myst_enable_extensions = [
@@ -56,18 +85,25 @@ myst_enable_extensions = [
     'attrs_block'
 ]
 
+add_module_names = False
+
+napoleon_google_docstring = True
+napoleon_include_init_with_doc = True
+napoleon_include_private_with_doc = False
+napoleon_include_special_with_doc = True
+napoleon_use_admonition_for_examples = False
+napoleon_use_admonition_for_notes = True
+napoleon_use_admonition_for_references = True
+napoleon_use_ivar = False
+napoleon_use_param = True
+napoleon_use_rtype = True
+napoleon_preprocess_types = False
+
 
 '''
 https://myst-parser.readthedocs.io/en/latest/configuration.html
 '''
-myst_heading_anchors = 5
-
-
-
-'''
-Sphinx Issues
-'''
-issues_default_group_project = 'prml-0004/pages'
+myst_heading_anchors = 4
 
 
 '''
@@ -75,6 +111,13 @@ Mathematics
 '''
 mathjax_path = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
 myst_dmath_double_inline = True
+
+
+'''
+Code
+'''
+pygments_style = 'sphinx'
+
 
 
 '''
@@ -96,33 +139,70 @@ Options for HTML output
 https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 '''
 
-html_theme = 'sphinx_book_theme'
-
-html_static_path = ['_static']
-
-html_css_files = ['https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css',
-                  'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css',
-                  'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css',
-                  'css/figures.css',
-                  'css/generic.css']
-
-html_js_files = ['https://code.jquery.com/jquery-3.7.0.min.js',
-                 'https://viewer.diagrams.net/js/viewer-static.min.js',
-                 'https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js',
-                 'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js']
+html_theme = 'revitron_sphinx_theme'
 
 html_theme_options = {
-    'use_download_button': True,
-    'use_fullscreen_button': True,
-    'home_page_in_toc': False,
-    'show_navbar_depth': 1,
-    'max_navbar_depth': 4,
-    'collapse_navbar': False,
-    'toc_title': 'PAGES',
-    'show_toc_level': 2,
-    'sidebarwidth': 250,
-    'navigation_with_keys': False,
-    'use_sidenotes': True
+    'canonical_url': 'https://thetemplates.github.io/python-sphinx-illustration/',
+    'style_external_links': False,
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 3,
+    'includehidden': True,
+    'titles_only': False,
+    'github_url': 'https://www.github.com/thetemplates/python-sphinx-illustration',
+    'logo_mobile': '_static/32x32.svg'
 }
 
-html_logo = ''
+html_static_path: list[str] = ['_static']
+
+html_css_files: list[str] = [
+    'https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css',
+    'css/custom.css',
+    'css/tooltips.css',
+    'css/slides.css',
+    'css/generic.css',
+    'https://unpkg.com/flickity@2/dist/flickity.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.min.css']
+
+html_js_files: list[str] = [
+    'https://code.jquery.com/jquery-3.7.0.min.js',
+    'https://code.highcharts.com/stock/highstock.js',
+    'https://code.highcharts.com/stock/modules/data.js',
+    'https://code.highcharts.com/stock/modules/exporting.js',
+    'https://code.highcharts.com/stock/modules/export-data.js',
+    'https://code.highcharts.com/stock/modules/accessibility.js',
+    'https://code.highcharts.com/highcharts.js',
+    'https://code.highcharts.com/modules/networkgraph.js',
+    'https://viewer.diagrams.net/js/viewer-static.min.js',
+    'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js',
+    'js/slides.js']
+
+html_title = 'SPHINX ILLUSTRATION'
+
+html_favicon = '_static/favicon.ico'
+
+html_context = {
+    'landing_page': {
+        'menu': [
+            {'title': '<b>Parent</b>',
+             'url': 'https://github.com/theartificialintelligenceunit'},
+            {'title': '<b>Introduction</b>',
+             'url': 'introduction.html'}
+        ]
+    },
+    'display_github': True,
+    'github_repo': 'thetemplates/python-sphinx-illustration',
+    'conf_py_path': 'develop/docs/source/'
+}
+
+html_sidebars = {}
+
+
+'''
+Options for intersphinx extension
+https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#configuration
+'''
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3', None),
+}
