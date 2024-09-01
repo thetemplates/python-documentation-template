@@ -15,13 +15,13 @@ The development image depends on
 The requirements file lists the packages/libraries required for development.  The image is built via the command
 
 ```shell
-docker build . --file .devcontainer/Dockerfile --tag transcribe
+docker build . --file .devcontainer/Dockerfile --tag design
 ```
 
 Subsequently, a development container is initialised via the command
 
 ```shell
-docker run --rm -i -t -p 127.0.0.1:10000:8888 -w /app --mount type=bind,src="$(pwd)",target=/app transcribe
+docker run --rm -i -t -p 127.0.0.1:10000:8888 -w /app --mount type=bind,src="$(pwd)",target=/app design
 ```
 
 <br>
