@@ -87,7 +87,7 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Hub: hub.md
+  - Background: background.md
   - Topics:
       - Computer Vision: topic-computer-vision.md
       - Natural Language Processing: topic-nlp.md
