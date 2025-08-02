@@ -27,20 +27,6 @@ docker run --rm -i -t -p 127.0.0.1:10000:8888 -w /app --mount type=bind,src="$(p
 <br>
 <br>
 
-
-## Temporary Local Development
-
-The script 
-
-```shell
-source environment.sh
-```
-
-runs `environment.yml`, which uses the same *requirements.txt* as Dockerfile.
-
-<br>
-<br>
-
 ## Sphinx
 
 Initialise Sphinx via
