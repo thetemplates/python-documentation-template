@@ -1,10 +1,9 @@
 
-# Object Detection
+# Computer Vision
 
-:::{note}
-:class: dropdown
-In Progress
-:::
+## Applications
+
+Applications include object classification, object tracking, <a href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-computer-vision" target="_blank">etc</a>.
 
 <br>
 <br>
