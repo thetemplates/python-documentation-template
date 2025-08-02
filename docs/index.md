@@ -1,11 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=./docs/build/html/index.html">
-    <title>Hub</title>
-</head>
-<body>
+---
+template: home.html
+title: Template
+social:
+  cards_layout_options:
+    title: Documentation Template
+---
 
-</body>
-</html>
+A documentation template for the artificial intelligence unit.
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
