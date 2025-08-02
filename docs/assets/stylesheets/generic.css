@@ -1,10 +1,10 @@
 /* pages */
 .icon-home:before {
-    content: url('../assets/images/32x32.svg');
+    content: url('../images/32x32.svg');
 }
 
 .fa-home:before {
-    content: url('../assets/images/16x16.svg');
+    content: url('../images/16x16.svg');
 }
 
 .rst-content h1 {
