@@ -87,7 +87,6 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Index: index.md
   - Hub: hub.md
   - Topics:
       - Computer Vision: topic-computer-vision.md
