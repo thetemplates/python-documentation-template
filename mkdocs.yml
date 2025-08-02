@@ -1,0 +1,93 @@
+# Preliminaries
+site_name: DOCUMENTATION TEMPLATE
+site_url: https://github.com/thetemplates/python-documentation-template
+site_author: Artificial Intelligence Unit
+site_description: A documentation template for the artificial intelligence unit.
+
+
+# Repository
+repo_name: thetemplates.github.io/python-documentation-template
+repo_url: https://github.com/thetemplates/python-documentation-template
+
+
+# Copyright
+copyright: Copyright &copy; Artificial Intelligence Unit
+
+
+# Theme
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    primary: orange
+    accent: amber
+  font:
+    text: Noto Sans
+    code: Noto Sans Mono
+
+
+# JavaScript
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+
+
+# Python Markdown & Python Markdown Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Background: background.md
+  - Topics:
+      - Computer Vision: topic-computer-vision.md
+      - Natural Language Processing: topic-nlp.md
